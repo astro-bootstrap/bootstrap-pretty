@@ -2,7 +2,7 @@
     * Bootstrap Pretty 0.2.2 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
     * Based on Bootstrap 5.3.0-alpha1 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
     * Copyright 2011-2023 Bootstrap (https://getbootstrap.com)
-    * Copyright 2023 Bootstrap Pretty (https://bootstrappretty.dev)
+    * Copyright 2024 Bootstrap Pretty (https://bootstrappretty.dev)
     * Original code licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     * Licensed under MIT (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
     */
@@ -184,7 +184,6 @@
   const reflow = element => {
     element.offsetHeight; // eslint-disable-line no-unused-expressions
   };
-
   const getjQuery = () => {
     if (window.jQuery && !document.body.hasAttribute('data-bs-no-jquery')) {
       return window.jQuery;
@@ -284,6 +283,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -612,6 +612,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Class definition
    */
@@ -663,6 +664,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -731,6 +733,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   const getSelector = element => {
     let selector = element.getAttribute('data-bs-target');
     if (!selector || selector === '#') {
@@ -819,6 +822,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   const enableDismissTrigger = (component, method = 'hide') => {
     const clickEvent = `click.dismiss${component.EVENT_KEY}`;
     const name = component.NAME;
@@ -843,6 +847,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -918,6 +923,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -980,6 +986,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -1099,6 +1106,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -1472,6 +1480,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -1704,6 +1713,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -2072,6 +2082,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -2169,6 +2180,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -2185,7 +2197,6 @@
     // if false, we use the backdrop helper without adding any element to the dom
     rootElement: 'body' // give the choice to place backdrop under different elements
   };
-
   const DefaultType$8 = {
     className: 'string',
     clickCallback: '(function|null)',
@@ -2293,6 +2304,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -2309,7 +2321,6 @@
     autofocus: true,
     trapElement: null // The element to trap focus inside of
   };
-
   const DefaultType$7 = {
     autofocus: 'boolean',
     trapElement: 'element'
@@ -2390,6 +2401,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -2696,6 +2708,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -3022,6 +3035,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -3156,6 +3170,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -3668,6 +3683,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -3747,6 +3763,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -4006,6 +4023,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants
@@ -4268,6 +4286,7 @@
    * --------------------------------------------------------------------------
    */
 
+
   /**
    * Constants
    */
@@ -4450,6 +4469,7 @@
    * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   const copyCodeSnippet = () => {
     const copyCodeSnippetTrigger = new ClipboardJS('.bp-copy-code-snippet-trigger');
     copyCodeSnippetTrigger.on('success', e => {
@@ -4474,6 +4494,7 @@
    * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   const index_umd = {
     Alert,
     Button,

@@ -2,7 +2,7 @@
     * Bootstrap Pretty 0.2.2 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
     * Based on Bootstrap 5.3.0-alpha1 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
     * Copyright 2011-2023 Bootstrap (https://getbootstrap.com)
-    * Copyright 2023 Bootstrap Pretty (https://bootstrappretty.dev)
+    * Copyright 2024 Bootstrap Pretty (https://bootstrappretty.dev)
     * Original code licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     * Licensed under MIT (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
     */
@@ -162,7 +162,6 @@ const noop = () => {};
 const reflow = element => {
   element.offsetHeight; // eslint-disable-line no-unused-expressions
 };
-
 const getjQuery = () => {
   if (window.jQuery && !document.body.hasAttribute('data-bs-no-jquery')) {
     return window.jQuery;
@@ -262,6 +261,7 @@ const getNextActiveElement = (list, activeElement, shouldGetNext, isCycleAllowed
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -590,6 +590,7 @@ const Manipulator = {
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Class definition
  */
@@ -641,6 +642,7 @@ class Config {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -709,6 +711,7 @@ class BaseComponent extends Config {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 const getSelector = element => {
   let selector = element.getAttribute('data-bs-target');
   if (!selector || selector === '#') {
@@ -797,6 +800,7 @@ const SelectorEngine = {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 const enableDismissTrigger = (component, method = 'hide') => {
   const clickEvent = `click.dismiss${component.EVENT_KEY}`;
   const name = component.NAME;
@@ -821,6 +825,7 @@ const enableDismissTrigger = (component, method = 'hide') => {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -896,6 +901,7 @@ defineJQueryPlugin(Alert);
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -958,6 +964,7 @@ defineJQueryPlugin(Button);
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -1077,6 +1084,7 @@ class Swipe extends Config {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -1450,6 +1458,7 @@ defineJQueryPlugin(Carousel);
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -1682,6 +1691,7 @@ defineJQueryPlugin(Collapse);
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -2050,6 +2060,7 @@ defineJQueryPlugin(Dropdown);
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -2147,6 +2158,7 @@ class ScrollBarHelper {
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -2163,7 +2175,6 @@ const Default$8 = {
   // if false, we use the backdrop helper without adding any element to the dom
   rootElement: 'body' // give the choice to place backdrop under different elements
 };
-
 const DefaultType$8 = {
   className: 'string',
   clickCallback: '(function|null)',
@@ -2271,6 +2282,7 @@ class Backdrop extends Config {
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -2287,7 +2299,6 @@ const Default$7 = {
   autofocus: true,
   trapElement: null // The element to trap focus inside of
 };
-
 const DefaultType$7 = {
   autofocus: 'boolean',
   trapElement: 'element'
@@ -2368,6 +2379,7 @@ class FocusTrap extends Config {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -2674,6 +2686,7 @@ defineJQueryPlugin(Modal);
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -3000,6 +3013,7 @@ function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -3134,6 +3148,7 @@ class TemplateFactory extends Config {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -3646,6 +3661,7 @@ defineJQueryPlugin(Tooltip);
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -3725,6 +3741,7 @@ defineJQueryPlugin(Popover);
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -3984,6 +4001,7 @@ defineJQueryPlugin(ScrollSpy);
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 /**
  * Constants
@@ -4246,6 +4264,7 @@ defineJQueryPlugin(Tab);
  * --------------------------------------------------------------------------
  */
 
+
 /**
  * Constants
  */
@@ -4428,6 +4447,7 @@ defineJQueryPlugin(Toast);
  * Licensed under Apache-2.0 (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 const copyCodeSnippet = () => {
   const copyCodeSnippetTrigger = new ClipboardJS('.bp-copy-code-snippet-trigger');
   copyCodeSnippetTrigger.on('success', e => {

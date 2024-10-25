@@ -2,7 +2,7 @@
     * Bootstrap Pretty offcanvas.js 0.2.2 (https://github.com/bootstrap-pretty/bootstrap-pretty#readme)
     * Based on Bootstrap 5.3.0-alpha1 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
     * Copyright 2011-2023 Bootstrap (https://getbootstrap.com)
-    * Copyright 2023 Bootstrap Pretty (https://bootstrappretty.dev)
+    * Copyright 2024 Bootstrap Pretty (https://bootstrappretty.dev)
     * Original code licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     * Licensed under MIT (https://github.com/bootstrap-pretty/bootstrap-pretty/blob/master/LICENSE)
     */
@@ -18,6 +18,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
 
   /**
    * Constants

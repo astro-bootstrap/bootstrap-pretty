@@ -33,14 +33,14 @@
     "bundle": "echo \"🚀 Cleaning dist folder...\" && del-cli --force dist && echo \"🚀 Copying Bootstrap JS...\" && npm-run-all js-copy-bootstrap && echo \"🚀 Generating JS...\" && npm-run-all js && echo \"🚀 Copying palette SCSS into folders...\" && node build/copy-palettes.js && echo \"🚀 Generating minified CSS...\" && sass --load-path=node_modules --style=compressed --no-source-map scss/palettes:dist/css/palettes && echo \"🚀 Updating file names...\" && node build/rename-css.js && echo \"🚀 Generating unminified CSS...\" && sass --load-path=node_modules --no-source-map scss/palettes:dist/css/palettes && echo \"✨ Bundling complete!\"",
     "css-lint": "stylelint scss/**/**/*.scss",
     "js": "npm-run-all js-compile js-minify",
-    "js-compile": "npm-run-all --aggregate-output --parallel js-compile-*",
+    "js-compile": "npm-run-all --aggregate-output --parallel js-compile-\\*",
     "js-compile-standalone": "rollup --environment BUNDLE:false --config build/rollup.config.js --sourcemap",
     "js-compile-standalone-esm": "rollup --environment ESM:true,BUNDLE:false --config build/rollup.config.js --sourcemap",
     "js-compile-bundle": "rollup --environment BUNDLE:true --config build/rollup.config.js --sourcemap",
     "js-compile-plugins": "node build/build-plugins.js",
     "js-copy-bootstrap": "node build/copy-bootstrap.js",
     "js-lint": "eslint js/*.js js/src/*.js build/*.js",
-    "js-minify": "npm-run-all --aggregate-output --parallel js-minify-*",
+    "js-minify": "npm-run-all --aggregate-output --parallel js-minify-\\*",
     "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-pretty.js.map,includeSources,url=bootstrap-pretty.min.js.map\" --output dist/js/bootstrap-pretty.min.js dist/js/bootstrap-pretty.js",
     "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-pretty.esm.js.map,includeSources,url=bootstrap-pretty.esm.min.js.map\" --output dist/js/bootstrap-pretty.esm.min.js dist/js/bootstrap-pretty.esm.js",
     "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-pretty.bundle.js.map,includeSources,url=bootstrap-pretty.bundle.min.js.map\" --output dist/js/bootstrap-pretty.bundle.min.js dist/js/bootstrap-pretty.bundle.js",
@@ -71,12 +71,13 @@
     "glob": "^8.0.3",
     "globby": "^11.0.4",
     "http-server": "^14.1.1",
-    "npm-run-all": "^4.1.5",
+    "npm-run-all2": "^6.2.3",
     "rollup": "^3.10.1",
     "rollup-plugin-terser": "^7.0.2",
     "sass": "1.55.0",
     "stylelint": "^14.16.1",
     "stylelint-config-twbs-bootstrap": "^7.0.0",
+    "terser": "^5.36.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4"
   },
@@ -94,6 +95,7 @@
     "!scss/tests/**",
     "!scss/templates/**",
     "components/**/*.{html,astro}",
-    "shiki-themes/*.json"
+    "shiki-themes/*.json",
+    "shiki-themes/*.mjs"
   ]
 }

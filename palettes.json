@@ -11,15 +11,15 @@
         "shiki": "dracula"
     },
     {
-        "slug": "palettes/material-palenight",
-        "palette": "material-palenight",
+        "slug": "palettes/material-theme-palenight",
+        "palette": "material-theme-palenight",
         "title": "Material Palenight",
         "description": "A Bootstrap Pretty palette based on the Material Palenight VS Code theme.",
         "modes": ["light", "dark"],
         "defaultMode": "dark",
         "tags": ["featured", "blue", "vscode"],
         "playwrightCategory": "palettes",
-        "shiki": "material-palenight"
+        "shiki": "material-theme-palenight"
     },
     {
         "slug": "palettes/synthax",
